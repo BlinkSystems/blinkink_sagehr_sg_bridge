@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # sagehr_sg_bridge
 
 Bridge between SageHR and SG
@@ -68,3 +69,6 @@ Run the Docker container:
 ```sh
 docker run -e LOG_LEVEL=INFO -e SAGEHR_API_URL=https://api.sage.hr -e SAGEHR_API_KEY=your_api_key -e SAGE_LEAVE_REQUEST_SYNC_INTERVAL=60 -e SG_SITE_URL=https://your_shotgun_site_url -e SG_SCRIPT_NAME=your_script_name -e SG_SCRIPT_KEY=your_script_key sagehr_sg_bridge
 ```
+=======
+# blinkink_sagehr_sg_bridge
+>>>>>>> refs/remotes/origin/main
