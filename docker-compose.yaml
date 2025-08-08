@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  sagehr_sg_bridge:
+    image: sagehr_sg_bridge:latest
+    environment:
+      LOG_LEVEL: INFO
+      SAGEHR_API_URL: https://api.sage.hr
+      SAGEHR_API_KEY: ${SAGEHR_API_KEY}
+      SAGE_LEAVE_REQUEST_SYNC_INTERVAL: 60
+      SG_SITE_URL: ${SG_SITE_URL}
+      SG_SCRIPT_NAME: ${SG_SCRIPT_NAME}
+      SG_SCRIPT_KEY: ${SG_SCRIPT_KEY}
+    restart: unless-stopped
